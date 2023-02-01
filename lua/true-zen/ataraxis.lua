@@ -61,6 +61,7 @@ local function save_opts()
 		VertSplit = colors.get_hl("VertSplit"),
 		SignColumn = colors.get_hl("SignColumn"),
 		WinBar = colors.get_hl("WinBar"),
+		WinSeparator = colors.get_hl("WinSeparator"),
 	}
 end
 
@@ -99,7 +100,7 @@ local function fix_padding(orientation, dimension, mod)
 	else
 		local wanted_available_size = (
 			dimension == "width" and padding.left + padding.right + mwa or padding.top + padding.bottom + mwa
-		)
+			)
 		if wanted_available_size > window_dimension then
 			local available_space = window_dimension - mwa -- available space for padding on each side (e.g. left and right)
 			return (available_space % 2 > 0 and ((available_space - 1) / 2) or available_space / 2)
