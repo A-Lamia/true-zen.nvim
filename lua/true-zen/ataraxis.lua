@@ -62,6 +62,7 @@ local function save_opts()
 		SignColumn = colors.get_hl("SignColumn"),
 		WinBar = colors.get_hl("WinBar"),
 		WinSeparator = colors.get_hl("WinSeparator"),
+		NormalNC = colors.get_hl("NormalNC"),
 	}
 end
 
